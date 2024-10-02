@@ -31,9 +31,9 @@ const ImageContainer = ({ iconName, alt }) => {
 
   return (
     <div
-      className={`w-full h-full bg-[#333] rounded-[20px] border-[2px] border-[#555] flex items-center justify-center retro-shadow transition-all duration-300 ${hoverColor}`}
+      className={`md:w-full md:h-full bg-[#333] p-3 md:rounded-[20px] rounded-[15px] border-[2px] border-[#555] flex items-center justify-center retro-shadow transition-all duration-300 ${hoverColor}`}
     >
-      <span className="text-white text-3xl" aria-label={alt}>
+      <span className="text-white md:text-3xl text-3xl" aria-label={alt}>
         {icons[iconName]}
       </span>
     </div>

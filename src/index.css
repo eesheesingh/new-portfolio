@@ -36,3 +36,17 @@ html, body {
   animation: marquee 15s linear infinite;
 }
 
+/* Custom CSS for carousel dots */
+.carousel .control-dots .dot {
+  background-color: #555;  /* Change the default dot color */
+  width: 15px;  /* Adjust the size */
+  height: 15px;
+  border-radius: 50%;  /* Make them round */
+  margin: 0 8px;  /* Add spacing between dots */
+  transition: background-color 0.3s ease;
+}
+
+.carousel .control-dots .dot:hover {
+  background-color: #fff;  /* Change color on hover */
+}
+
