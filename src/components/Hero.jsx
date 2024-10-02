@@ -7,6 +7,7 @@ import ImageContainer from "./ImageContainer";
 import StackMarquee from "./stackCarousel";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'; // Importing framer-motion for animations
 import { BsGithub } from "react-icons/bs";
 
 const Hero = () => {
@@ -35,8 +36,25 @@ const Hero = () => {
     fetchGitHubProfile();
   }, []);
 
+  // Auto scroll to top in mobile view
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      window.scrollTo(0, 0); // Scroll to top if mobile screen
+    }
+  }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", duration: 0.8 } },
+  };
+
   return (
-    <div className="hero-section flex justify-center items-center h-auto md:h-screen bg-[#000] px-3 py-6 md:px-6">
+    <motion.div
+      className="hero-section flex justify-center items-center h-auto md:h-screen bg-[#000] px-3 py-6 md:px-6"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <div className="p-4 md:p-6 bg-[#000] border-[2px] border-[#444] rounded-[30px] text-center flex flex-col justify-center items-center retro-shadow w-full">
         {/* First Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 w-full max-w-screen-xl mb-4 md:mb-4">
@@ -255,7 +273,7 @@ const Hero = () => {
           <ImageContainer iconName="email" alt="Email" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
