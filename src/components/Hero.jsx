@@ -124,13 +124,13 @@ const Hero = () => {
 
             {/* Third Section: 3x2 Icon Grid */}
             <div className="w-1/2 md:grid grid-cols-3 gap-2 hidden">
-              <ImageContainer iconName="call" alt="Twitter" />
-              <ImageContainer iconName="vercel" alt="Dribbble" />
-              <ImageContainer iconName="instagram" alt="Instagram" />
-              <ImageContainer iconName="linkedin" alt="LinkedIn" />
-              <ImageContainer iconName="github" alt="Behance" />
-              <ImageContainer iconName="email" alt="Email" />
-            </div>
+            <ImageContainer iconName="call" alt="Call" /> {/* Calls the handleClick for mobile or desktop */}
+  <ImageContainer iconName="vercel" alt="Vercel" url="https://vercel.com/eesheesinghs-projects" />
+  <ImageContainer iconName="instagram" alt="Instagram" url="https://www.instagram.com/eesheepal/" />
+  <ImageContainer iconName="linkedin" alt="LinkedIn" url="https://www.linkedin.com/in/eesheepal-singh-80057b204/" />
+  <ImageContainer iconName="github" alt="GitHub" url="https://github.com/eesheesingh" />
+  <ImageContainer iconName="email" alt="Email" url="mailto:singheeshee@gmail.com" />
+</div>
           </div>
         </div>
 
@@ -309,12 +309,12 @@ const Hero = () => {
           </div>
         </a>
         <div className="w-full grid grid-cols-6 gap-2 md:hidden lg:hidden sm:hidden mt-3">
-          <ImageContainer iconName="call" alt="Twitter" />
-          <ImageContainer iconName="vercel" alt="Dribbble" />
-          <ImageContainer iconName="instagram" alt="Instagram" />
-          <ImageContainer iconName="linkedin" alt="LinkedIn" />
-          <ImageContainer iconName="github" alt="Behance" />
-          <ImageContainer iconName="email" alt="Email" />
+        <ImageContainer iconName="call" alt="Call" /> {/* Calls the handleClick for mobile or desktop */}
+  <ImageContainer iconName="vercel" alt="Vercel" url="https://vercel.com/eesheesinghs-projects" />
+  <ImageContainer iconName="instagram" alt="Instagram" url="https://www.instagram.com/eesheepal/" />
+  <ImageContainer iconName="linkedin" alt="LinkedIn" url="https://www.linkedin.com/in/eesheepal-singh-80057b204/" />
+  <ImageContainer iconName="github" alt="GitHub" url="https://github.com/eesheesingh" />
+  <ImageContainer iconName="email" alt="Email" url="mailto:singheeshee@gmail.com" />
         </div>
       </div>
     </motion.div>
