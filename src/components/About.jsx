@@ -143,7 +143,9 @@ const About = () => {
               {experienceData.map((experience) => (
                 <div key={experience.id} className="mb-4">
                   <div className="flex justify-between items-center">
-                    <span>{experience.title}</span>
+                    <span>{experience.title} <br/>
+                    
+                    {experience.company}</span>
                     <span className="text-[#999]">{experience.period}</span>
                   </div>
                   {experience.id !== experienceData.length && <hr className="border-[#444] my-4" />}

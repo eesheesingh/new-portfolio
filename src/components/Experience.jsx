@@ -69,7 +69,10 @@ const Experience = () => {
                 <div className="flex justify-between items-center mb-4">
                   <div className="flex items-center space-x-4">
                     <FaBriefcase className="text-[#ffcc00] text-xl" /> {/* Job Icon */}
-                    <span className="text-lg font-semibold">{experience.title}</span>
+                    <span className="text-lg font-semibold">{experience.title}
+                    <br/><span className='text-sm'>{experience.company}</span>
+                    </span>
+                    
                   </div>
                   <span className="text-[#999]">{experience.period}</span>
                 </div>
