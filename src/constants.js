@@ -52,10 +52,8 @@ export const experienceData = [
     story: {
       title: 'What I\'m about?',
       description: `
-        I was born and raised in Cairo, Egypt. Ever since I was a child, I have had a passion for art and design.
-        I was captivated by the vibrant colors and intricate details of the things around me, which inspired me
-        to learn web design, where I delved deeper into the world of UX and product design.`,
-      currentRole: 'Today I\'m a Design Lead at mano, improving the daily process of ordering groceries.',
+        I was born and raised in Mumbai, Maharashtra. I have had a passion for code development.`,
+      currentRole: 'I am a front-end developer at HailGro Tech Solutions, specializing in building responsive dashboards and websites using React.js, Vite.js, Next.js, and Tailwind CSS, with a focus on real-time chat functionalities using SignalR, API integration, and seamless user experiences.',
     },
    
   };

@@ -53,7 +53,7 @@ const Experience = () => {
               My Professional Experience
             </h2>
             <p className="text-md leading-relaxed mb-4">
-              My journey through design has been a rewarding one. Here’s a detailed breakdown of my experiences that
+              My journey as Developer has been a rewarding one. Here’s a detailed breakdown of my experiences that
               have shaped me as a professional.
             </p>
           </motion.div>

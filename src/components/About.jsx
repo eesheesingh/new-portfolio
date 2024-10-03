@@ -88,34 +88,26 @@ const About = () => {
               >
                 <div className="p-4">
                   <h3 className="text-sm text-[#000] mb-2">
-                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>Digital Design</span>
+                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>Web Design</span>
                   </h3>
                   <p className="text-md leading-relaxed mb-4">
-                    Providing innovative problem-solving methods and impactful solutions to ensure a better user experience.
+                  Craft responsive, visually appealing UIs with JS Frameworks, Tailwind, Bootstrap.
                   </p>
                 </div>
                 <div className="p-4">
                   <h3 className="text-sm text-[#000] mb-2">
-                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>UX/UI Design</span>
+                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>API Integration</span>
                   </h3>
                   <p className="text-md leading-relaxed mb-4">
-                    Crafting intuitive and delightful user experiences across platforms.
+                  Seamlessly connect front-end with back-end using RESTful APIs.
                   </p>
                 </div>
                 <div className="p-4">
                   <h3 className="text-sm text-[#000] mb-2">
-                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>Product Design</span>
+                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>Fluent FrameWorks</span>
                   </h3>
                   <p className="text-md leading-relaxed mb-4">
-                    Leading product design initiatives with a focus on functionality and aesthetics.
-                  </p>
-                </div>
-                <div className="p-4">
-                  <h3 className="text-sm text-[#000] mb-2">
-                    <span className='bg-[#fff] rounded-[30px] py-1 px-3'>Design Systems</span>
-                  </h3>
-                  <p className="text-md leading-relaxed mb-4">
-                    Building cohesive design systems that scale across teams and products.
+                    I am fluent in ReactJs, NextJs, Node.Js, ViteJs
                   </p>
                 </div>
               </Carousel>
