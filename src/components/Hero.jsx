@@ -19,7 +19,7 @@ const Hero = () => {
   const [repoCount, setRepoCount] = useState(0);
   const [userName, setUserName] = useState("");
   const [githubName, setGithubName] = useState("");
-  const [avatarUrl, setAvatarUrl] = useState(""); 
+  const [avatarUrl, setAvatarUrl] = useState("");
 
   useEffect(() => {
     const fetchGitHubProfile = async () => {
@@ -28,10 +28,10 @@ const Hero = () => {
           `https://api.github.com/users/eesheesingh`
         );
         const data = await response.json();
-        setRepoCount(data.public_repos); 
+        setRepoCount(data.public_repos);
         setUserName(data.login);
         setGithubName(data.name);
-        setAvatarUrl(data.avatar_url); 
+        setAvatarUrl(data.avatar_url);
       } catch (error) {
         console.error("Error fetching GitHub profile:", error);
       }
@@ -42,7 +42,7 @@ const Hero = () => {
 
   useEffect(() => {
     if (window.innerWidth <= 768) {
-      window.scrollTo(0, 0); 
+      window.scrollTo(0, 0);
     }
   }, []);
 
@@ -75,8 +75,8 @@ const Hero = () => {
               Hi, I'm Eeshee –
             </h1>
             <p className="mt-2 text-sm md:text-md leading-relaxed font-mono">
-              Lead product designer, currently working at{" "}
-              <span className="underline">mano</span> based in Cairo.
+              A Front-end Developer, currently working at{" "}
+              <span className="underline">HailGro Tech Solutions</span> based in Gurgaon.
             </p>
           </div>
 
@@ -105,8 +105,8 @@ const Hero = () => {
             {/* Second Project */}
             <motion.div
               className="relative hidden md:block w-full md:w-1/3 bg-[#1d1d1d] rounded-[20px] border-[2px] border-[#fffefe11] overflow-hidden retro-shadow cursor-pointer"
-              whileHover={{ scale: 1.05 }} 
-              onClick={() => handleProjectClick(projects[1].id)} 
+              whileHover={{ scale: 1.05 }}
+              onClick={() => handleProjectClick(projects[1].id)}
             >
               <img
                 src={projects[1].imgSrc}
@@ -124,13 +124,34 @@ const Hero = () => {
 
             {/* Third Section: 3x2 Icon Grid */}
             <div className="w-1/2 md:grid grid-cols-3 gap-2 hidden">
-            <ImageContainer iconName="call" alt="Call" /> {/* Calls the handleClick for mobile or desktop */}
-  <ImageContainer iconName="vercel" alt="Vercel" url="https://vercel.com/eesheesinghs-projects" />
-  <ImageContainer iconName="instagram" alt="Instagram" url="https://www.instagram.com/eesheepal/" />
-  <ImageContainer iconName="linkedin" alt="LinkedIn" url="https://www.linkedin.com/in/eesheepal-singh-80057b204/" />
-  <ImageContainer iconName="github" alt="GitHub" url="https://github.com/eesheesingh" />
-  <ImageContainer iconName="email" alt="Email" url="mailto:singheeshee@gmail.com" />
-</div>
+              <ImageContainer iconName="call" alt="Call" />{" "}
+              {/* Calls the handleClick for mobile or desktop */}
+              <ImageContainer
+                iconName="vercel"
+                alt="Vercel"
+                url="https://vercel.com/eesheesinghs-projects"
+              />
+              <ImageContainer
+                iconName="instagram"
+                alt="Instagram"
+                url="https://www.instagram.com/eesheepal/"
+              />
+              <ImageContainer
+                iconName="linkedin"
+                alt="LinkedIn"
+                url="https://www.linkedin.com/in/eesheepal-singh-80057b204/"
+              />
+              <ImageContainer
+                iconName="github"
+                alt="GitHub"
+                url="https://github.com/eesheesingh"
+              />
+              <ImageContainer
+                iconName="email"
+                alt="Email"
+                url="mailto:singheeshee@gmail.com"
+              />
+            </div>
           </div>
         </div>
 
@@ -165,7 +186,7 @@ const Hero = () => {
           >
             <h1 className="text-lg font-bold font-mono">About</h1>
             <p className="mt-2 text-sm leading-relaxed font-mono">
-              Passionate about design and enjoy solving problems.
+            Driven by a passion for coding and a love for problem-solving.
             </p>
             {/* Arrow Icon at bottom right */}
             <div className="absolute bottom-4 right-4">
@@ -182,7 +203,7 @@ const Hero = () => {
           >
             <h1 className="text-lg font-bold font-mono">Experience</h1>
             <p className="mt-2 text-sm leading-relaxed font-mono">
-              Here is the third container in the second row.
+             Check out my journey of work, up until now
             </p>
             {/* Arrow Icon at bottom right */}
             <div className="absolute bottom-4 right-4">
@@ -197,9 +218,9 @@ const Hero = () => {
             to="/projects"
             className="md:col-span-1 w-full bg-[#1d1d1d] md:h-[400px] row-span-2 border-[2px] border-[#fffefe11] text-left text-[#fff] p-4 rounded-[20px] flex flex-col justify-center relative retro-shadow group hover:border-[#ffffff5d] transition-all"
           >
-            <h1 className="text-lg font-bold font-mono">Projects</h1>
+            <h1 className="text-lg font-bold font-mono">Curious about my Projects?</h1>
             <p className="mt-2 text-sm leading-relaxed font-mono">
-              This is a vertically long container in the second row.
+            Explore My Creations I built with my fingers on the keyboard and a screen
             </p>
 
             {/* GIF Image Section */}
@@ -309,12 +330,33 @@ const Hero = () => {
           </div>
         </a>
         <div className="w-full grid grid-cols-6 gap-2 md:hidden lg:hidden sm:hidden mt-3">
-        <ImageContainer iconName="call" alt="Call" /> {/* Calls the handleClick for mobile or desktop */}
-  <ImageContainer iconName="vercel" alt="Vercel" url="https://vercel.com/eesheesinghs-projects" />
-  <ImageContainer iconName="instagram" alt="Instagram" url="https://www.instagram.com/eesheepal/" />
-  <ImageContainer iconName="linkedin" alt="LinkedIn" url="https://www.linkedin.com/in/eesheepal-singh-80057b204/" />
-  <ImageContainer iconName="github" alt="GitHub" url="https://github.com/eesheesingh" />
-  <ImageContainer iconName="email" alt="Email" url="mailto:singheeshee@gmail.com" />
+          <ImageContainer iconName="call" alt="Call" />{" "}
+          {/* Calls the handleClick for mobile or desktop */}
+          <ImageContainer
+            iconName="vercel"
+            alt="Vercel"
+            url="https://vercel.com/eesheesinghs-projects"
+          />
+          <ImageContainer
+            iconName="instagram"
+            alt="Instagram"
+            url="https://www.instagram.com/eesheepal/"
+          />
+          <ImageContainer
+            iconName="linkedin"
+            alt="LinkedIn"
+            url="https://www.linkedin.com/in/eesheepal-singh-80057b204/"
+          />
+          <ImageContainer
+            iconName="github"
+            alt="GitHub"
+            url="https://github.com/eesheesingh"
+          />
+          <ImageContainer
+            iconName="email"
+            alt="Email"
+            url="mailto:singheeshee@gmail.com"
+          />
         </div>
       </div>
     </motion.div>
