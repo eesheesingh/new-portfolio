@@ -6,6 +6,7 @@ import img4 from "./assets/desidabba.png";
 import img5 from "./assets/jsHub-img.png";
 import img6 from "./assets/freshlo-img.png";
 import img7 from "./assets/porfolio2023-img.png";
+import img8 from "./assets/humourload.png";
 
 // import img3 from "../assets/an-avatar-of-a-brown-guy-looking-at-you-with-cute-smiles-with-transparent-background-hes-wearing-a-627855248-removebg-preview.png";
 
@@ -151,6 +152,17 @@ Styling and UI components are given special attention through Tailwind CSS and R
       "Vite, React, Framer, EmailJS, Vercel",
     company: "Owned",
   },
+  {
+    id: 8,
+    title: "Humour Load",
+    description: "A light-hearted web app designed to brighten your day with dad jokes, inspiring quotes, and dark humor. Enjoy a fun mix of content and interact with each joke or quote to express your reactions.",
+    aboutData: "Humour Load is built as a Vite-based application, leveraging the power of React, Tailwind CSS, and Framer Motion for a smooth, animated experience. The project includes three main features: Humour Load, which serves dad jokes; Quote Load, a section dedicated to inspirational quotes with various categories; and Dark Humour, which provides a playful take on darker humor. Each section is enhanced with reaction options, sharing capabilities, and a fun UI with animated emojis. The app integrates APIs for jokes and quotes, supporting real-time data fetching, lazy loading, and category-based browsing, making it an engaging, user-friendly experience.",
+    imgSrc: img8,
+    status: "https://github.com/eesheesingh/HumourLoad-React.git",
+    projectLink: "https://humour-load-react.vercel.app/",
+    tools: "Vite, React, Tailwind CSS, Framer Motion, Typewriter Effect, REST APIs",
+    company: "Owned",
+},
 ];
 
 export default projects;
