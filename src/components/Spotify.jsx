@@ -16,7 +16,7 @@ const SpotifyBar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPlayer(true);
-    }, 5000);
+    }, 60000); // Show the player after 1 minute (60000 ms)
 
     const handleScroll = () => {
       setShowPlayer(false);
