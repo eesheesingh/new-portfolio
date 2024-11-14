@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // Importing framer-motion for animations
 import { BsGithub } from "react-icons/bs";
 import projects from "../constants"; // Import project data
+import Spotify from "./Spotify";
 
 const Hero = () => {
   const navigate = useNavigate(); // Ensure useNavigate hook is used within the component
@@ -358,6 +359,7 @@ const Hero = () => {
             url="mailto:singheeshee@gmail.com"
           />
         </div>
+        <Spotify />
       </div>
     </motion.div>
   );
