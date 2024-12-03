@@ -12,12 +12,20 @@ import img8 from "./assets/humourload.png";
 
 export const experienceData = [
   {
+    id: 6,
+    title: "Front-end Developer",
+    company: "India Accelerator",
+    period: "Current",
+    description:
+      "Working on React Native product based apps such Booking Managements in Coworking spaces and Dashboards.",
+  },
+  {
     id: 1,
     title: "Front-end Developer",
     company: " HailGro Tech Solutions",
-    period: "Current",
+    period: "Jan 2024 – Nov 2024",
     description:
-      "Currently building top-notch dashboards and websites with React, Vite, and Next.js. Our team crafts dynamic digital solutions that enhance user experiences and drive business growth.",
+      "Built top-notch dashboards and websites with React, Vite, and Next.js. Our team crafts dynamic digital solutions that enhance user experiences and drive business growth.",
   },
   {
     id: 2,
@@ -59,7 +67,7 @@ export const aboutData = {
     description: `
         I was born and raised in Mumbai, Maharashtra. I have had a passion for code development.`,
     currentRole:
-      "I am a front-end developer at HailGro Tech Solutions, specializing in building responsive dashboards and websites using React.js, Vite.js, Next.js, and Tailwind CSS, with a focus on real-time chat functionalities using SignalR, API integration, and seamless user experiences.",
+      "I am a front-end developer at India Accelerators, specializing in building responsive dashboards and websites using React.js, Vite.js, Next.js, and Tailwind CSS, with React Native applications with seamless user experiences.",
   },
 };
 

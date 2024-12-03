@@ -77,7 +77,7 @@ const Hero = () => {
             </h1>
             <p className="mt-2 text-sm md:text-md leading-relaxed font-mono">
               A Front-end Developer, currently working at{" "}
-              <span className="underline">HailGro Tech Solutions</span> based in Gurgaon.
+              <span className="underline">India Accelerators</span> based in Gurgaon.
             </p>
           </div>
 

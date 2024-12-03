@@ -134,13 +134,13 @@ const About = () => {
             <div className="text-md leading-relaxed">
               {experienceData.map((experience) => (
                 <div key={experience.id} className="mb-4">
+                  {experience.id !== experienceData.length && <hr className="border-[#444] my-4" />}
                   <div className="flex justify-between items-center">
                     <span>{experience.title} <br/>
                     
                     {experience.company}</span>
                     <span className="text-[#999]">{experience.period}</span>
                   </div>
-                  {experience.id !== experienceData.length && <hr className="border-[#444] my-4" />}
                 </div>
               ))}
             </div>
